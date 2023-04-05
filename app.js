@@ -62,4 +62,4 @@ color:white;
 
 `
 
-document.getElementById('display').innerHTML = bContent
+document.getElementById('Bdisplay').innerHTML = bContent
