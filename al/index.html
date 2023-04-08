@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO</title>
+    <link rel="stylesheet" href="./lib_fr/bootstrap.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  padding: 6px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 8px;
+
+}
+
+li {
+  display: inline;
+  padding: 10px;
+  
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.copybtn {
+  background-color: blue;
+  color: white;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 80px;
+}
+
+.card :hover {
+  background-color: rgb(14, 19, 143);
+}
+
+.line{
+  border-bottom: 4px solid red;
+}
+
+
+    </style>
+</head>
+<body>
+
+<nav class="bg-primary ">
+    <ul>
+        <li class="line"><a href="#">NHL / NBA </a></li>
+        <li ><a href="./mlb.html">MLB</a></li>
+        <li ><a href="./ncaab.html">NCAAB </a></li>
+    </ul>
+    
+</nav>
+
+<br>
+<div class="container-fluid">
+
+
+</div>
+<script src="./lib_fr/jquery.js"></script>
+<script>
+
+let display = document.querySelector('.container-fluid')
+let i;
+for (i = 1; i <= 15; i++) {
+
+    display.innerHTML += `
+    <div class="row">
+<div class="col-6 btnCard" style="border-right: 3px solid black; ">
+<button class="copybtn bg-secondary" id="nhl${i}" onclick="nhl(${i})">NHL${i}</button>
+</div>
+
+
+<div class="col-6 btnCard">
+<button class="copybtn bg-secondary" onclick="nba(${i})">NBA${i}</button>
+</div>
+
+</div>
+<br>`
+
+$('#nhl14 , #nhl15').hide()
+$('#nhl1 , #nhl15').hide()
+
+
+function nhl(cid){
+    let url = 'http://www.cr8soccer.ml/p/nhl'+cid+'.html'
+
+    
+if(url === 'http://www.cr8soccer.ml/p/nhl12.html'){
+    url = 'http://www.cr8soccer.ml/p/nhl13.html'
+ }
+
+ if(url === 'http://www.cr8soccer.ml/p/nhl13.html'){
+    url = 'http://www.cr8soccer.ml/p/nhl14.html'
+ }
+
+    navigator.clipboard.writeText(url);
+}
+
+function nba(cid){
+    let url = 'http://www.cr8soccer.ml/p/nba'+cid+'.html'
+
+    
+if(url === 'http://www.cr8soccer.ml/p/nba7.html'){
+    url = 'http://www.cr8soccer.ml/p/nba6_7.html'
+ }
+
+ if(url === 'http://www.cr8soccer.ml/p/nba9.html'){
+    url = 'http://www.cr8soccer.ml/p/ch9_14.html'
+ }
+
+ if(url === 'http://www.cr8soccer.ml/p/nba14.html'){
+    url = 'http://www.cr8soccer.ml/p/nba15.html'
+ }
+
+ if(url === 'http://www.cr8soccer.ml/p/nba15.html'){
+    url = 'http://www.cr8soccer.ml/p/nba15_7.html'
+ }
+
+
+    navigator.clipboard.writeText(url);
+ }
+
+}
+
+</script>
+<script src="./lib_fr/app.js"></script>
+
+</body>
+
+</html>

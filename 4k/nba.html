@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO</title>
+    <link rel="stylesheet" href="./lib_fr/bootstrap.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  padding: 6px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 8px;
+
+}
+
+li {
+  display: inline;
+  padding: 10px;
+  
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.copybtn {
+  background-color: blue;
+  color: white;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 80px;
+}
+
+.card :hover {
+  background-color: rgb(14, 19, 143);
+}
+
+.line{
+  border-bottom: 4px solid red;
+}
+
+
+    </style>
+</head>
+<body>
+
+<nav class="bg-primary ">
+    <ul>
+        <li ><a href="./index.html">NHL </a></li>
+        <li class="line"><a href="#">NBA </a></li>
+        <li><a href="./mlb.html">MLB </a></li>
+        <li ><a href="./ncaab.html">NCAAB </a></li>
+    </ul>
+    
+</nav>
+
+<br>
+<div class="container">
+
+
+</div>
+<script src="./lib_fr/jquery.js"></script>
+
+
+<script>
+
+    let display = document.querySelector('.container')
+        let i;
+        for (i = 1; i <= 14; i++) {
+    
+            display.innerHTML += `
+            <div class="card ">
+            <button class="copybtn bg-success" onclick="copy(${i})">NBA${i}</button>
+        </div>
+        <br>`
+        
+    
+    
+    
+        function copy(cid){
+    let url = 'http://www.4ksoccer.tk/p/nba'+cid+'.html'
+
+    
+if(url === 'http://www.4ksoccer.tk/p/nba1.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-philadelphia-76ers-vs-los-angeles.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba2.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-san-antonio-spurs-vs-orlando-magic.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba3.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-brooklyn-nets-vs-milwaukee-bucks.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba4.html'){
+    url = 'http://www.4ksoccer.tk/p/nbaboston-celtics-vs-minnesota.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba5.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-cleveland-cavaliers-vs-toronto.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba6.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-detroit-pistons-vs-atlanta-hawks.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba7.html'){
+    url = 'http://www.4ksoccer.tk/p/nbahouston-rockets-vs-dallas-mavericks.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba8.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-indiana-pacers-vs-miami-heat.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba9.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-oklahoma-city-thunder-vs-new.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba10.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-denver-nuggets-vs-portland-trail.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba11.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-phoenix-suns-vs-memphis-grizzlies.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba12.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-washington-wizards-vs-sacramento.html'
+ }
+
+ if(url === 'http://www.4ksoccer.tk/p/nba13.html'){
+    url = 'http://www.4ksoccer.tk/p/nba-charlotte-hornets-vs-los-angeles.html'
+ }
+
+
+    navigator.clipboard.writeText(url);
+ }
+
+    }
+    
+    </script>
+
+
+<script src="./lib_fr/app.js"></script>
+
+</body>
+
+</html>
