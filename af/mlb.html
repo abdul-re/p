@@ -5,9 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AUTO</title>
-    <link rel="stylesheet" href="./lib_fr/bootstrap.css" />
-    <link rel="icon" type="image/x-icon" href="./clipboard-check-fill.svg" />
+    <title>NBA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <style>
       * {
         margin: 0;
@@ -63,33 +62,56 @@
     <nav class="bg-primary fixed-top">
       <ul>
         <li><a href="./index.html">NHL</a></li>
-        <li ><a href="./nba.html">NBA</a></li>
-        <li  class="line"><a href="#">MLB</a></li>
-        <li><a href="./ncaab.html">NCAAB </a></li>
+        <li><a href="./nba.html">NBA</a></li>
+        <li class="line"><a href="#">MLB </a></li>
       </ul>
     </nav>
 
     <div class="container-fluid"></div>
-    <script src="./lib_fr/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
       let display = document.querySelector(".container-fluid");
       let i;
-      for (i = 1; i <= 25; i++) {
+      for (i = 1; i <= 30; i++) {
         display.innerHTML += `
-            <div class="card ">
-            <button class="copybtn bg-secondary" onclick="copy(${i})">MLB${i}</button>
+            <div class="card "  id="dis${i}">
+            <button class="copybtn bg-secondary" onclick="copy(${i})">MLB ${i}</button>
         </div>
-        <br>`;
+        <br id="bbr${i}">`;  
 
         function copy(cid) {
-          let url = "https://uhdstream.blogspot.com/p/mlb" + cid + ".html";
+          let url = "http://www.nbastream.ga/p/mlb" + cid + ".html";
 
+        
 
 
           navigator.clipboard.writeText(url);
         }
       }
     </script>
-    <script src="./lib_fr/app.js"></script>
+    <script>
+        $('a').mouseenter(function(){
+    $(this).css('color', 'rgb(186, 186, 186)')
+})
+
+$('a').mouseleave(function(){
+    $(this).css('color', 'white')
+})
+
+$('button').click(function(){
+    $(this).addClass('bg-danger')
+})
+
+
+$('button').mouseenter(function(){
+    $(this).removeClass('bg-secondary')
+    $(this).addClass('bg-primary')
+})
+
+$('button').mouseleave(function(){
+    $(this).addClass('bg-secondary')
+    $(this).removeClass('bg-primary')
+})
+    </script>
   </body>
 </html>
