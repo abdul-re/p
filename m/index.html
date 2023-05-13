@@ -128,7 +128,12 @@ $('.copybtn').mouseleave(function(){
 
 function copy(num){
    let links = $('.text-start')[num]
-    navigator.clipboard.writeText('https://embedstream.me'+links.getAttribute('href')+'-1');
+
+let embed = 'https://embedstream.me'+links.getAttribute('href')+'-1'
+
+    navigator.clipboard.writeText(`<iframe frameborder=0 width=640 height=480 src="${embed}" allowfullscreen scrolling=no allowtransparency></iframe>`);
+
+    
 
 }
 
