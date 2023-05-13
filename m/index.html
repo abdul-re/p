@@ -47,6 +47,11 @@
           font-size: 20px;
         }
 
+        span{
+          color:  #0D6EFD;
+          font-weight: bolder;
+          font-size: 20px;
+        }
 
       </style>
 </head>
@@ -87,18 +92,19 @@ $('#none').append(auto)
 
     for(i = 0; i<=15; i++){
 
+
 let test = $('.text-start')[i]
 
 const title = test.getAttribute('title')
     
 
 
-    
     display.innerHTML += `
             <div class="card ">
-            <button class="copybtn bg-secondary" onclick="copy(${i})"> ${i} <br> ${title} </button>
+            <button class="copybtn bg-secondary" onclick="copy(${i})"> <span> ${i} </span> <br> ${title} </button>
         </div>
         <br>`;
+      
 
         $('.copybtn').click(function(){
     $(this).addClass('bg-danger')
@@ -114,8 +120,9 @@ $('.copybtn').mouseleave(function(){
     $(this).addClass('bg-secondary')
     $(this).removeClass('bg-primary')
 })
-    }
 
+
+  }
 }
 
 
