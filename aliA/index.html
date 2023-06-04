@@ -184,7 +184,7 @@ if(Sportsurge.checked){
 
 let urlSurge = `http://www.cr8soccer.ml/p/watch.html?${"&game="+title+'&'+query.slice(1)}&su`
 
-let simpleUrlSurge = url.replace(/ /g, "-");
+let simpleUrlSurge = urlSurge.replace(/ /g, "-");
 
 navigator.clipboard.writeText(simpleUrlSurge.toLowerCase());
 
