@@ -100,7 +100,7 @@ $(document).ready(function () {
   });
   
   function copy(index, league) {
-    let url = `http://v2.wqstreams.tk/p/${league + index}.html`;
+    let url = `http://www.wqstreams.tk/p/${league + index}.html`;
   
     navigator.clipboard.writeText(url);
   }
