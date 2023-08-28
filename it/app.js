@@ -103,33 +103,33 @@ function copy(index, league) {
   let url = `https://espnonline.cf/p/${league + index}.html`;
 
   if (url === "https://espnonline.cf/p/cfb57.html") {
-    url = "http://p2.espnonline.cf/p/cfb.html";
+    url = "https://espnonline.cf/p/cfb.html";
   } else if (url === "https://espnonline.cf/p/cfb58.html") {
-    url = "http://p2.espnonline.cf/p/cfb_25.html";
+    url = "https://espnonline.cf/p/cfb_25.html";
   } else if (url === "https://espnonline.cf/p/cfb59.html") {
-    url = "http://p2.espnonline.cf/p/cfb_1.html";
+    url = "https://espnonline.cf/p/cfb_1.html";
   } else if (url === "https://espnonline.cf/p/cfb60.html") {
-    url = "http://p2.espnonline.cf/p/cfb_69.html";
+    url = "https://espnonline.cf/p/cfb_69.html";
   } else if (url === "https://espnonline.cf/p/cfb61.html") {
-    url = "http://p2.espnonline.cf/p/cfb_17.html";
+    url = "https://espnonline.cf/p/cfb_17.html";
   } else if (url === "https://espnonline.cf/p/cfb62.html") {
-    url = "http://p2.espnonline.cf/p/cfb_6.html";
+    url = "https://espnonline.cf/p/cfb_6.html";
   } else if (url === "https://espnonline.cf/p/cfb63.html") {
-    url = "http://p2.espnonline.cf/p/cfb_52.html";
+    url = "https://espnonline.cf/p/cfb_52.html";
   } else if (url === "https://espnonline.cf/p/cfb64.html") {
-    url = "http://p2.espnonline.cf/p/cfb_41.html";
+    url = "https:/.espnonline.cf/p/cfb_41.html";
   } else if (url === "https://espnonline.cf/p/cfb65.html") {
-    url = "http://p2.espnonline.cf/p/cfb_39.html";
+    url = "https://espnonline.cf/p/cfb_39.html";
   } else if (url === "https://espnonline.cf/p/cfb66.html") {
-    url = "http://p2.espnonline.cf/p/cfb_3.html";
+    url = "https://espnonline.cf/p/cfb_3.html";
   } else if (url === "https://espnonline.cf/p/cfb67.html") {
-    url = "http://p2.espnonline.cf/p/cfb_20.html";
+    url = "https://espnonline.cf/p/cfb_20.html";
   } else if (url === "https://espnonline.cf/p/cfb68.html") {
-    url = "http://p2.espnonline.cf/p/cfb_0.html";
+    url = "https://espnonline.cf/p/cfb_0.html";
   } else if (url === "https://espnonline.cf/p/cfb69.html") {
-    url = "http://p2.espnonline.cf/p/cfb_61.html";
+    url = "https://espnonline.cf/p/cfb_61.html";
   } else if (url === "https://espnonline.cf/p/cfb70.html") {
-    url = "http://p2.espnonline.cf/p/cfb_77.html";
+    url = "https://espnonline.cf/p/cfb_77.html";
   }
 
   navigator.clipboard.writeText(url);
