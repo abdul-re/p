@@ -61,7 +61,7 @@ $(document).ready(function () {
     }
     $(".nav-link").on("click", function () {
       let leagueName = "";
-      let totalPages = 15;
+      let totalPages = 20;
   
       if ($(this).html() === "NHL") {
         leagueName = "nhl-";
@@ -95,13 +95,12 @@ $(document).ready(function () {
       </div>
       <br>`);
         btnStyles();
-        $('#mlb4').hide()
       }
     });
   });
   
   function copy(index, league) {
-    let url = `http://www.4ksoccer.tk/p/${league + index}.html`;
+    let url = `http://4ksoccer.tk/p/${league + index}.html`;
   
     navigator.clipboard.writeText(url);
   }
