@@ -64,13 +64,13 @@ $(document).ready(function () {
       let totalPages = 20;
   
       if ($(this).html() === "NHL") {
-        leagueName = "nhl-";
+        leagueName = "nhl";
       } else if ($(this).html() === "NBA") {
         leagueName = "nba";
       } else if ($(this).html() === "MLB") {
         leagueName = "mlb";
       } else if ($(this).html() === "NFL") {
-        leagueName = "nfl";
+        leagueName = "nfl-";
         totalPages = 20;
       } else if ($(this).html() === "CFB") {
         leagueName = "cfb";
