@@ -18,11 +18,13 @@ $(document).ready(function () {
         <div class="navbar-nav">
           <a class="nav-link active line" href="javascript:void(0)">NHL</a>
           <a class="nav-link" href="javascript:void(0)">NBA</a>
+          <a class="nav-link" href="javascript:void(0)">NCAAB</a>
           <a class="nav-link" href="javascript:void(0)">MLB</a>
           <a class="nav-link" href="javascript:void(0)">NFL</a>
           <a class="nav-link" href="javascript:void(0)">CFB</a>
           <a class="nav-link" href="javascript:void(0)">BOXING</a>
           <a class="nav-link" href="javascript:void(0)">MMA</a>
+          <a class="nav-link" href="javascript:void(0)">MLS</a>
         </div>
       </div>
     </div>
@@ -61,26 +63,30 @@ $(document).ready(function () {
     }
     $(".nav-link").on("click", function () {
       let leagueName = "";
-      let totalPages = 15;
+      let totalPages = 20;
   
       if ($(this).html() === "NHL") {
         leagueName = "nhl";
       } else if ($(this).html() === "NBA") {
         leagueName = "nba";
       } else if ($(this).html() === "MLB") {
-        leagueName = "ml";
+        leagueName = "mlb";
       } else if ($(this).html() === "NFL") {
         leagueName = "nfl";
-        totalPages = 20;
       } else if ($(this).html() === "CFB") {
         leagueName = "cfb";
-        totalPages = 70;
+        totalPages = 100;
       } else if ($(this).html() === "BOXING") {
         leagueName = "boxing";
-        totalPages = 5;
+        totalPages = 10;
       } else if ($(this).html() === "MMA") {
         leagueName = "mma";
-        totalPages = 5;
+        totalPages = 10;
+      } else if ($(this).html() === "NCAAB") {
+        leagueName = "ncaab";
+        totalPages = 100;
+      } else if ($(this).html() === "MLS") {
+        leagueName = "mls";
       }
   
       document.title = leagueName.toUpperCase().replace("-", "");
@@ -100,7 +106,7 @@ $(document).ready(function () {
   });
   
   function copy(index, league) {
-    let url = `https://gm-streams.blogspot.com/p/${league + index}.html`;
+    let url = `http://pro.allsportshd.tk/p/${league + index}.html`;
   
     navigator.clipboard.writeText(url);
   }
