@@ -1,0 +1,52 @@
+.container-fluid {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  margin: 2px;
+}
+
+.item1 {
+  display: flex;
+  width: 470px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item2 {
+  padding-top: 286px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.customBtn {
+  width: 450px;
+  height: 50px;
+  margin: 17.8px;
+  border-radius: 0;
+  transition: ease 0.4s;
+  animation-name: onLoadAnimation;
+  animation-duration: 2s;
+}
+
+.customBtn:hover {
+  width: 470px;
+}
+
+@keyframes onLoadAnimation {
+  0% {
+    width: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 450px;
+  }
+}
