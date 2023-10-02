@@ -61,7 +61,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active line" href="./index.html">NHL</a>
+            <a class="nav-link" href="./index.html">NHL</a>
             <a class="nav-link" href="./nba.html">NBA</a>
             <a class="nav-link" href="./mlb.html">MLB</a>
             <a class="nav-link" href="./nfl.html">NFL</a>
@@ -69,7 +69,7 @@
             <a class="nav-link" href="./mls.html">MLS</a>
             <a class="nav-link" href="./ncaab.html">NCAAB</a>
             <a class="nav-link" href="./wnba.html">WNBA</a>
-            <a class="nav-link" href="./boxing.html">BOXING</a>
+            <a class="nav-link active line" href="./boxing.html">BOXING</a>
             <a class="nav-link" href="./mma.html">MMA</a>
           </div>
         </div>
@@ -84,17 +84,19 @@
     ></script>
     <script>
       let display = document.querySelector(".display");
-      for (i = 0; i < 20; i++) {
+      for (i = 0; i < 10; i++) {
         display.innerHTML += `
             <div class="card ">
-            <button class="copybtn bg-secondary" onclick="copy(${i})">NHL ${
+            <button class="copybtn bg-secondary" onclick="copy(${i})">BOXING ${
           i + 1
         }</button>
         </div>
         <br>`;
 
         function copy(cid) {
-          let url = `http://www.germany3d.tk/${cid + 490}/0/nhl-sg/${cid + 1}`;
+          let url = `http://www.germany3d.tk/${cid + 840}/0/boxing-sg/${
+            cid + 1
+          }`;
 
           navigator.clipboard.writeText(url);
         }

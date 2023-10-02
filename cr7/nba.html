@@ -61,8 +61,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active line" href="./index.html">NHL</a>
-            <a class="nav-link" href="./nba.html">NBA</a>
+            <a class="nav-link" href="./index.html">NHL</a>
+            <a class="nav-link active line" href="./nba.html">NBA</a>
             <a class="nav-link" href="./mlb.html">MLB</a>
             <a class="nav-link" href="./nfl.html">NFL</a>
             <a class="nav-link" href="./cfb.html">CFB</a>
@@ -87,14 +87,14 @@
       for (i = 0; i < 20; i++) {
         display.innerHTML += `
             <div class="card ">
-            <button class="copybtn bg-secondary" onclick="copy(${i})">NHL ${
+            <button class="copybtn bg-secondary" onclick="copy(${i})">NBA ${
           i + 1
         }</button>
         </div>
         <br>`;
 
         function copy(cid) {
-          let url = `http://www.germany3d.tk/${cid + 490}/0/nhl-sg/${cid + 1}`;
+          let url = `http://www.germany3d.tk/${cid + 510}/0/nba-sg/${cid + 1}`;
 
           navigator.clipboard.writeText(url);
         }
