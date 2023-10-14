@@ -1,0 +1,18 @@
+#generatorInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.generatorInput{
+    width: 50%;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#display{
+    padding-top: 50px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord Schedule Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="generatorInputs">
+      <input
+        type="text"
+        id="league"
+        placeholder="Enter League"
+        class="generatorInput"
+      />
+      <input
+        type="text"
+        id="title"
+        placeholder="Enter Title"
+        class="generatorInput"
+      />
+      <input
+        type="text"
+        id="link"
+        placeholder="Enter Stream Link"
+        class="generatorInput"
+      />
+      <button
+        onclick="generate()"
+        class="generatorInput"
+        style="width: 40%; background-color: rgb(107, 185, 253)"
+      >
+        Generate
+      </button>
+      <button
+        onclick="copy()"
+        class="generatorInput"
+        style="width: 40%; background-color: rgb(253, 107, 136)"
+      >
+        Copy
+      </button>
+      <div id="display">
+        <div id="leaguetop"></div>
+
+        <div id="schedule"></div>
+
+        <div id="leaguebottom"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
