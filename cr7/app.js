@@ -100,7 +100,7 @@ $(document).ready(function () {
   });
   
   function copy(index, league) {
-    let url = `http://www.germany3d.tk/p/${league + index}.html`;
+    let url = `http://www.shora-streams.tk/p/${league + index}.html`;
   
     navigator.clipboard.writeText(url);
   }
