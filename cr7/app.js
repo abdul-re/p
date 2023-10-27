@@ -100,7 +100,7 @@ $(document).ready(function () {
   });
   
   function copy(index, league) {
-    let url = `https://www.shora-streams.tk/${league + index}.html`;
+    let url = `http://www.shora-streams.tk/${league + index}.html`;
   
     navigator.clipboard.writeText(url);
   }
