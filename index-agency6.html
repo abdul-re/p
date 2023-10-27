@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <title>HD_NFL : {{ $page->page_title }}</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Mobile Specific Metas -->
+
+    <!-- Favicons -->
+    <!-- FONTS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Archivo:100,200,300,400,400italic,500,600,700,700italic,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400italic,500,600,700,700italic,900"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--CSS -->
+    <link rel="stylesheet" href="content/agency6/css/structure.css" />
+    <link rel="stylesheet" href="content/agency6/css/agency6.css" />
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="plugins/rs-plugin-6.custom/css/rs6.css" />
+    <style>
+      body {
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+      .custom-container {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .item {
+        margin: 5px;
+      }
+
+      .item2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #player iframe {
+        width: 1200px;
+        height: 600px;
+      }
+
+      #bkLinks {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .action_button {
+        width: 140px;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .custom-container {
+          flex-direction: column-reverse;
+        }
+
+        #player iframe {
+          width: 640px;
+          height: 460px;
+        }
+
+        #wrapper {
+          width: 768px;
+        }
+      }
+    </style>
+    {!! htmlspecialchars_decode($ads->head_tag_ads_code) !!}
+  </head>
+
+  <body
+    class="template-slider style-default button-custom if-zoom if-border-hide header-classic header-fw sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky tr-header tr-menu be-page-8"
+    style="background-color: #1b1726"
+  >
+    <div id="Wrapper" style="width: 100vw">
+      <div id="Header_wrapper">
+        <header id="Header">
+          <div id="Top_bar">
+            <div class="row">
+              <div class="column one">
+                <div class="top_bar_left clearfix">
+                  <div class="logo">
+                    <a
+                      id="logo"
+                      href="index-agency6.html"
+                      title="BeAgency 6 - Betheme"
+                      data-height="60"
+                      data-padding="15"
+                    >
+                      <h3>HD-NFL</h3></a
+                    >
+                  </div>
+                  <div class="menu_wrapper">
+                    <nav id="menu">
+                      <ul id="menu-main-menu" class="menu menu-main">
+                        <li>
+                          <a href="#"><span>NBA</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>NHL</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>MLB</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>NFL</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>BOXING</span></a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <a
+                      class="responsive-menu-toggle"
+                      href="#"
+                      aria-label="Mobile menu"
+                      ><i class="icon-menu-fine" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="top_bar_right"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- START Home Agency6 REVOLUTION SLIDER 6.5.8 -->
+
+            <!-- END REVOLUTION SLIDER -->
+          </div>
+        </header>
+      </div>
+      <div id="Content">
+        <div class="custom-container">
+          <div class="item item1">
+            {!! htmlspecialchars_decode($ads->left_player_ads_code) !!}
+
+          </div>
+          <div class="item item2">
+            <div class="playerTopAd">
+              {!! htmlspecialchars_decode($ads->top_player_ads_code) !!}
+            </div>
+
+            <div id="bkLinks" style="text-align: center; padding-bottom: 60px">
+              {!! $page->game->site_links !!}
+
+            </div>
+
+            <div id="player">
+              {!! $page->page_data !!}
+
+            </div>
+            {!! htmlspecialchars_decode($ads->bottom_player_ads_code) !!}
+
+          </div>
+          <div class="item item3">
+            {!! htmlspecialchars_decode($ads->footer_ads_code) !!}
+
+          </div>
+        </div>
+      </div>
+      <footer id="Footer" class="clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <hr class="no_line" style="margin: 0 auto 120px" />
+            </div>
+            <div class="col-md-3">
+              <p>
+                <a href="#">NBA</a> <br />
+                <a href="#">NHL</a> <br />
+                <a href="#">MLB</a> <br />
+                <a href="#">NFL</a>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p>
+                <a href="#">BOXING</a> <br />
+                <a href="#">MMA</a> <br />
+                <a href="#">SOCCER</a> <br />
+                <a href="#">CFL</a>
+              </p>
+            </div>
+
+            <div class="col-md-3">
+              <figure class="wp-block-image size-full">
+                <h3>HD-NFL</h3>
+              </figure>
+              <h4 class="themecolor"></h4>
+              <p>
+                <a href="#"><span>usahdserver@gmail.com</span></a>
+              </p>
+            </div>
+            <div class="col-12">
+              <hr class="no_line" style="margin: 0 auto 60px" />
+            </div>
+          </div>
+        </div>
+        <div class="footer_copy">
+          <div class="container">
+            <div class="column one">
+              <a id="back_to_top" class="footer_button" href="#"
+                ><i class="icon-up-open-big"></i
+              ></a>
+              <div class="copyright">
+                &copy; 2023 - Made With ❤️ By
+                <a target="_blank" rel="nofollow" href="#">HD-NFL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="Side_slide" class="right dark" data-width="250">
+      <div class="close-wrapper">
+        <a href="#" class="close"><i class="icon-cancel-fine"></i></a>
+      </div>
+      <div class="extras">
+        <div class="extras-wrapper"></div>
+      </div>
+      <div class="menu_wrapper"></div>
+    </div>
+    <div id="body_overlay"></div>
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-3.4.0.min.js"></script>
+    <script src="js/mfn.menu.js"></script>
+    <script src="js/jquery.plugins.js"></script>
+    <script src="js/jquery.jplayer.min.js"></script>
+    <script src="js/animations/animations.js"></script>
+    <script src="js/translate3d.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="plugins/rs-plugin-6.custom/js/revolution.tools.min.js"></script>
+    <script src="plugins/rs-plugin-6.custom/js/rs6.min.js"></script>
+    <script type="text/javascript">
+      var revapi1, tpj;
+
+      function revinit_revslider11() {
+        jQuery(function () {
+          tpj = jQuery;
+          revapi1 = tpj("#rev_slider_1_1");
+          if (revapi1 == undefined || revapi1.revolution == undefined) {
+            revslider_showDoubleJqueryError("rev_slider_1_1");
+          } else {
+            revapi1.revolution({
+              sliderLayout: "fullwidth",
+              visibilityLevels: "1240,1240,778,778",
+              gridwidth: "1400,1400,778,778",
+              gridheight: "950,950,1100,1100",
+              spinner: "spinner12",
+              perspective: 600,
+              perspectiveType: "global",
+              spinnerclr: "#13d5ff",
+              editorheight: "950,768,1100,720",
+              responsiveLevels: "1240,1240,778,778",
+              progressBar: {
+                disableProgressBar: true,
+              },
+              navigation: {
+                onHoverStop: false,
+              },
+              fallbacks: {
+                allowHTML5AutoPlayOnAndroid: true,
+              },
+            });
+          }
+        });
+      } // End of RevInitScript
+      var once_revslider11 = false;
+      if (document.readyState === "loading") {
+        document.addEventListener("readystatechange", function () {
+          if (
+            (document.readyState === "interactive" ||
+              document.readyState === "complete") &&
+            !once_revslider11
+          ) {
+            once_revslider11 = true;
+            revinit_revslider11();
+          }
+        });
+      } else {
+        once_revslider11 = true;
+        revinit_revslider11();
+      }
+    </script>
+  </body>
+</html>
