@@ -19,6 +19,7 @@ $(document).ready(function () {
           <a class="nav-link active line" href="javascript:void(0)">NHL</a>
           <a class="nav-link" href="javascript:void(0)">NBA</a>
           <a class="nav-link" href="javascript:void(0)">MLB</a>
+          <a class="nav-link" href="javascript:void(0)">NCAAB</a>
           <a class="nav-link" href="javascript:void(0)">NFL</a>
           <a class="nav-link" href="javascript:void(0)">CFB</a>
           <a class="nav-link" href="javascript:void(0)">BOXING</a>
@@ -81,6 +82,9 @@ $(document).ready(function () {
     } else if ($(this).html() === "MMA") {
       leagueName = "mma";
       totalPages = 5;
+    } else if ($(this).html() === "NCAAB") {
+      leagueName = "ncaab";
+      totalPages = 200;
     }
 
     document.title = leagueName.toUpperCase().replace("-", "");
