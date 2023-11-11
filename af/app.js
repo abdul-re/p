@@ -83,7 +83,7 @@ $(document).ready(function () {
         leagueName = "mma";
         totalPages = 10;
       } else if ($(this).html() === "NCAAB") {
-        leagueName = "ncaab";
+        leagueName = "ncaa";
         totalPages = 100;
       } else if ($(this).html() === "MLS") {
         leagueName = "mls";
