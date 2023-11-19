@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= host.toUpperCase() %> : <%= selectedPage.title %></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .player iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <% if (ads) { %> <%- ads.headAd %> <% } %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><%= host.toUpperCase() %></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">NHL Streams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NBA Streams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MLB Streams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NFL Streams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CFB Streams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MMA Streams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BOXING Streams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NCAAB Streams</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-xl-9 col-lg-12 d-flex justify-content-center pb-4">
+          <% if (ads) { %> <%- ads.topAd %> <% } %>
+        </div>
+
+        <div class="col-xl-9 col-lg-12 d-flex justify-content-center pb-2">
+          <div class="d-flex gap-2 justify-content-center w-100">
+            <a
+              href="https://redditnbastreams.cc/"
+              target="_blank"
+              class="btn btn-danger btn-sm rounded-0"
+              >NBA LINKS</a
+            >
+            <a
+              href="https://redditnhlstreams.cc/"
+              target="_blank"
+              class="btn btn-danger btn-sm rounded-0"
+              >NHL LINKS</a
+            >
+            <a
+              href="https://redditnflstreams.cc/"
+              target="_blank"
+              class="btn btn-danger btn-sm rounded-0"
+              >NFL LINKS</a
+            >
+            <a
+              href="https://redditmlbstreams.cc/"
+              target="_blank"
+              class="btn btn-danger btn-sm rounded-0"
+              >MLB LINKS</a
+            >
+            <a
+              href="https://redditboxingstreams.cc/"
+              target="_blank"
+              class="btn btn-danger btn-sm rounded-0"
+              >BOXING LINKS</a
+            >
+            <a
+              href="https://redditmmastreams.cc/"
+              target="_blank"
+              class="btn btn-danger btn-sm rounded-0"
+              >MMA LINKS</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-xl-9 col-lg-12 d-flex flex-column align-items-center pb-4 ps-2"
+        >
+          <div class="player ratio ratio-16x9">
+            <%- selectedPage.player %>
+          </div>
+
+          <div class="d-flex justify-content-center w-100 pt-4">
+            <% if (ads) { %> <%- ads.bottomAd %> <% } %>
+          </div>
+
+        </div>
+        <div
+          class="col-xl-3 col-lg-12 d-flex flex-column align-items-center align-items-xl-start"
+        >
+        <% if (ads) { %> <%- ads.rightAd %> <% } %>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
