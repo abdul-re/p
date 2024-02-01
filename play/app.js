@@ -65,25 +65,25 @@ $(document).ready(function () {
     let totalPages = 20;
 
     if ($(this).html() === "NHL") {
-      leagueName = "nhl";
+      leagueName = "snhl";
     } else if ($(this).html() === "NBA") {
-      leagueName = "nba";
+      leagueName = "snba";
     } else if ($(this).html() === "MLB") {
-      leagueName = "mlb";
+      leagueName = "smlb";
     } else if ($(this).html() === "NFL") {
-      leagueName = "nfl";
+      leagueName = "snfl";
       totalPages = 20;
     } else if ($(this).html() === "CFB") {
-      leagueName = "cfb";
+      leagueName = "scfb";
       totalPages = 100;
     } else if ($(this).html() === "BOXING") {
-      leagueName = "boxing";
+      leagueName = "sboxing";
       totalPages = 5;
     } else if ($(this).html() === "MMA") {
-      leagueName = "mma";
+      leagueName = "smma";
       totalPages = 5;
     } else if ($(this).html() === "NCAAB") {
-      leagueName = "ncaab";
+      leagueName = "sncaab";
       totalPages = 200;
     }
 
@@ -104,7 +104,7 @@ $(document).ready(function () {
 });
 
 function copy(index, league) {
-  let url = `http://play.btsports.online/p/${league + index}.html`;
+  let url = `http://v2.cr8soccer.online/p/${league + index}.html`;
 
   navigator.clipboard.writeText(url);
 }
