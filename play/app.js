@@ -54,7 +54,7 @@ $(document).ready(function () {
     $("#copyBtnDisplay").append(`
   
           <div class="card ">
-          <button class="copybtn bg-secondary" onclick="copy(${i}, 'nhl')">NHL ${i}</button>
+          <button class="copybtn bg-secondary" onclick="copy(${i}, 'snhl')">NHL ${i}</button>
       </div>
       <br>`);
 
