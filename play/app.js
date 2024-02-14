@@ -104,7 +104,7 @@ $(document).ready(function () {
 });
 
 function copy(index, league) {
-  let url = `http://v2.cr8soccer.online/p/${league + index}.html`;
+  let url = `http://v1.btsports.online/p/${league + index}.html`;
 
   navigator.clipboard.writeText(url);
 }
