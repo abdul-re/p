@@ -54,7 +54,7 @@ $(document).ready(function () {
     $("#copyBtnDisplay").append(`
   
           <div class="card ">
-          <button class="copybtn bg-secondary" onclick="copy(${i}, 'snhl')">NHL ${i}</button>
+          <button class="copybtn bg-secondary" onclick="copy(${i}, 'snhl')">SNHL ${i}</button>
       </div>
       <br>`);
 
@@ -104,7 +104,7 @@ $(document).ready(function () {
 });
 
 function copy(index, league) {
-  let url = `http://v1.btsports.online/p/${league + index}.html`;
+  let url = `http://fun.btsports.online/p/${league + index}.html`;
 
   navigator.clipboard.writeText(url);
 }
